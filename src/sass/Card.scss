@@ -1,0 +1,95 @@
+.cards {
+  border-radius: 12px;
+  border: 1px solid var(--Line-gray, #F0F0F0);
+  background: var(--White, #FFF);
+}
+
+.card-title {
+  color: var(--Black, #191919);
+  font-family: SF Pro Text;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  height: 40px;
+}
+
+.card-text {
+  color: var(--Black, #191919);
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.btns {
+  padding: 13px 32px;
+  border-radius: 6px;
+  background: var(--Primary, #FF7010);
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.price {
+  color: var(--Primary, #FF7010);
+  text-align: right;
+  font-family: SF Pro Text;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.title-category {
+  color: var(--Black, #191919);
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.btn__top {
+  bottom: 20px;
+  right: 20px;
+}
+
+.btn__top-img {
+  height: 50px;
+  width: 50px;
+}
+
+
+@media only screen and (max-width: 925px) {
+  .card-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 661px) {
+  .card-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 439px) {
+  .card-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.successes {
+  background-color: red !important;
+}
